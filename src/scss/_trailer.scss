@@ -1,0 +1,21 @@
+.trailer { 
+    position: fixed;
+    z-index: 2000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: rgb(29, 29, 29);
+    &-content { 
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    &-close { 
+        font-size: 25px;
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 10px;
+        cursor: pointer;
+    }
+}

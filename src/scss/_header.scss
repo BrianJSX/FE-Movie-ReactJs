@@ -1,0 +1,35 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.459);
+  z-index: 1000;
+  padding: 10px;
+  font-size: 22px;
+  &-content {
+    flex: 1;
+    &__list {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+    }
+    &__item {
+      margin: 10px;
+      cursor: pointer;
+      color: $text-color;
+    }
+  }
+  &-right {
+    display: flex;
+  }
+}
+.logo {
+  width: 100px;
+}
+.avatar {
+  line-height: 0;
+}

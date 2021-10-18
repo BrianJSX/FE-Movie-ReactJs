@@ -1,0 +1,30 @@
+.slider {
+  position: relative;
+  color: $text-color;
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  &-action {
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    &__desc {
+      width: 400px;
+      word-wrap: break-word;
+      margin: 20px;
+      font-weight: 380;
+      font-size: 18px;
+    }
+    &__button {
+      display: flex;
+      margin: 20px;
+    }
+  }
+}
+
+.slider_image {
+}
