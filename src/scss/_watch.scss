@@ -1,0 +1,66 @@
+.watch {
+  display: flex;
+  margin: 80px 20px 10px 20px;
+  &-left {
+    flex: 3;
+    margin-right: 10px;
+  }
+  &-right {
+    border: 1px solid gray;
+    flex: 1;
+    padding: 10px;
+  }
+  &-headerList {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  &-contentList {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  &-list {
+    overflow-y: scroll;
+    height: 390px;
+    scroll-behavior: smooth;
+  }
+  &-item {
+    display: flex;
+    margin: 10px;
+  }
+  &-item:hover &-itemTitle {
+    color: brown;
+  }
+  &-itemImage {
+    cursor: pointer;
+    overflow: hidden;
+  }
+  &-image {
+    &:hover {
+      transform: scale(1.3);
+      transition: all 0.2s ease-in;
+    }
+  }
+  &-itemTitle {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  &-content {
+    padding: 20px;
+    &__title { 
+      font-size: 20px;
+    }
+    &__action {
+      display: flex;
+      margin: 10px 0;
+      div {
+        margin: 0 10px;
+      }
+    }
+  }
+}
+.itemActive {
+  border: 2px dashed red;
+}
