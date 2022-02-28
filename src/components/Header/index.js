@@ -22,10 +22,10 @@ function Header() {
           <Link to="/">
             <li className="header-content__item">Home</li>
           </Link>
-          <Link to="/home">
+          <Link to="/series">
             <li className="header-content__item">Series</li>
           </Link>
-          <Link to="/">
+          <Link to="/movies">
             <li className="header-content__item">Movies</li>
           </Link>
         </ul>
